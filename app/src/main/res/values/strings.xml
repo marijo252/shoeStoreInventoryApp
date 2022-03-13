@@ -1,3 +1,25 @@
 <resources>
     <string name="app_name">ShoeStore</string>
+    <string name="appName">Shoe App</string>
+    <string name="enterEmail">Enter email</string>
+    <string name="enterpassword">Enter Password</string>
+    <string name="login_text">Login</string>
+    <string name="signUp_text">sign up</string>
+    <string name="welcomeText">Welcome to ShoeStore!</string>
+    <string name="welcomeParagraph">Welcome to our shoe store. With us you\'ll find the shoes of your dreams and have sent to you in a blink of a eye! Thank you so much for supoporting us!</string>
+    <string name="continueText">continue</string>
+    <string name="instructionsText">Instructions</string>
+    <string name="instructionsOne">1.- Search in our app the shoes that you like</string>
+    <string name="instructionsTwo">2.- You can see the shoe details and add it to the cart</string>
+    <string name="instructionsThree">3.- Set your address, payment method and that\'s it, you are all set</string>
+    <string name="shoelistText">Welcome! here our shoe list</string>
+    <string name="shoelistScrollview">scroll view that shows the list of avilable shoes in the store</string>
+    <string name="addShoeButton">button to add a shoe in th store</string>
+    <string name="logout_text">log out</string>
+    <string name="nameLabel">Name</string>
+    <string name="companyLabel">Company</string>
+    <string name="shoeSizeLabel">Size</string>
+    <string name="descriptionLabel">Description</string>
+    <string name="shoeDetailsText">Shoe details</string>
+    <string name="saveText">Save</string>
 </resources>
