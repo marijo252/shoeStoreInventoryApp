@@ -7,4 +7,5 @@
     <color name="signupColor">#FFFFFF</color>
     <color name="titleColor">#2D2D44</color>
     <color name="textColor">#000000</color>
+    <color name="cardBackgorund">#CFFAFF</color>
 </resources>

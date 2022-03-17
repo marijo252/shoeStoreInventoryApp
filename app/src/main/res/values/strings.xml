@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ShoeStore</string>
+    <string name="app_name">Shoe Store</string>
     <string name="appName">Shoe App</string>
     <string name="enterEmail">Enter email</string>
     <string name="enterpassword">Enter Password</string>

@@ -55,19 +55,19 @@
             app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress" />
 
         <Button
-            android:id="@+id/loginButton"
+            android:id="@+id/login_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:backgroundTint="@color/buttonColor"
             android:text="@string/login_text"
-            app:layout_constraintBaseline_toBaselineOf="@+id/button2"
-            app:layout_constraintEnd_toStartOf="@+id/button2"
+            app:layout_constraintBaseline_toBaselineOf="@+id/signup_button"
+            app:layout_constraintEnd_toStartOf="@+id/signup_button"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/signup_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
@@ -78,7 +78,7 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toEndOf="@+id/loginButton"
+            app:layout_constraintStart_toEndOf="@+id/login_button"
             app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword"
             app:layout_constraintVertical_bias="1.0" />
 
