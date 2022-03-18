@@ -29,7 +29,7 @@ class ShoeDetailsFragment: Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.shoe_details_fragment, container, false)
         val shoe = Shoe("",0.0,"","")
         binding.shoe = shoe
-        binding.lifecycleOwner = this
+        //binding.lifecycleOwner = this
 
         binding.saveButton.setOnClickListener{
             model.addShoe(shoe)
