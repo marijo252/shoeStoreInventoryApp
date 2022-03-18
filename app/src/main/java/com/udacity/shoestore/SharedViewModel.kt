@@ -39,12 +39,4 @@ class SharedViewModel: ViewModel() {
         shoes.add(shoe)
         _shoeList.value = shoes
     }
-
-    fun logInUser(){
-        _isLogged.value = true
-    }
-
-    fun logOutUser(){
-        _isLogged.value = false
-    }
 }

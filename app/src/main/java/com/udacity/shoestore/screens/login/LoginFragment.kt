@@ -24,11 +24,9 @@ class LoginFragment:Fragment() {
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.login_fragment, container, false)
         binding.loginButton.setOnClickListener{
-            model.logInUser()
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
         binding.signupButton.setOnClickListener{
-            model.logInUser()
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
         return binding.root
