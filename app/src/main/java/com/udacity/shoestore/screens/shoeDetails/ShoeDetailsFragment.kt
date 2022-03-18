@@ -27,7 +27,7 @@ class ShoeDetailsFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.shoe_details_fragment, container, false)
-        val shoe = Shoe("shoeName",0.0,"shoeCompany","shoeDescription")
+        val shoe = Shoe("",0.0,"","")
         binding.shoe = shoe
         binding.lifecycleOwner = this
 
