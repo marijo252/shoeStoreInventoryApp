@@ -27,15 +27,11 @@ class ShoeDetailsFragment: Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         binding = DataBindingUtil.inflate(inflater, R.layout.shoe_details_fragment, container, false)
+        val shoe = Shoe("shoeName",0.0,"shoeCompany","shoeDescription")
+        binding.shoe = shoe
+        binding.lifecycleOwner = this
 
         binding.saveButton.setOnClickListener{
-
-            val size = if (binding.sizeEditText.text.isEmpty()) 0.0 else binding.sizeEditText.text.toString().toDouble()
-            val name = if (binding.nameEditText.text.isEmpty()) "shoeName" else binding.nameEditText.text.toString()
-            val company = if (binding.companyEditText.text.isEmpty()) "shoeCompany" else binding.companyEditText.text.toString()
-            val description = if(binding.descriptionEditText.text.isEmpty()) "shoeDescription" else binding.descriptionEditText.text.toString()
-
-            val shoe = Shoe(name, size, company, description)
             model.addShoe(shoe)
             findNavController().popBackStack()
         }
