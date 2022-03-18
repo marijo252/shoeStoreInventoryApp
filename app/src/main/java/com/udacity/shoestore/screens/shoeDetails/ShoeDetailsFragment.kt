@@ -29,14 +29,19 @@ class ShoeDetailsFragment: Fragment() {
         binding = DataBindingUtil.inflate(inflater, R.layout.shoe_details_fragment, container, false)
 
         binding.saveButton.setOnClickListener{
-            val shoe = Shoe(binding.nameEditText.text.toString(), binding.sizeEditText.text.toString().toDouble(),
-                binding.companyEditText.text.toString(),binding.descriptionEditText.text.toString())
+
+            val size = if (binding.sizeEditText.text.isEmpty()) 0.0 else binding.sizeEditText.text.toString().toDouble()
+            val name = if (binding.nameEditText.text.isEmpty()) "shoeName" else binding.nameEditText.text.toString()
+            val company = if (binding.companyEditText.text.isEmpty()) "shoeCompany" else binding.companyEditText.text.toString()
+            val description = if(binding.descriptionEditText.text.isEmpty()) "shoeDescription" else binding.descriptionEditText.text.toString()
+
+            val shoe = Shoe(name, size, company, description)
             model.addShoe(shoe)
-            findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())
+            findNavController().popBackStack()
         }
 
         binding.cancelButton.setOnClickListener{
-            findNavController().navigate(ShoeDetailsFragmentDirections.actionShoeDetailsFragmentToShoeListFragment())
+            findNavController().popBackStack()
         }
         return binding.root
     }

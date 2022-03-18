@@ -27,6 +27,10 @@ class LoginFragment:Fragment() {
             model.logInUser()
             findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
         }
+        binding.signupButton.setOnClickListener{
+            model.logInUser()
+            findNavController().navigate(LoginFragmentDirections.actionLoginFragmentToWelcomeFragment())
+        }
         return binding.root
     }
 }

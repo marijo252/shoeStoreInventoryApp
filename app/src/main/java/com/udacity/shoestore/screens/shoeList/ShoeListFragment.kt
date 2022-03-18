@@ -45,8 +45,15 @@ class ShoeListFragment: Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
-                || super.onOptionsItemSelected(item)
+        return when(item.itemId){
+            R.id.loginFragment -> {
+                findNavController().navigate(ShoeListFragmentDirections.actionShoeListFragmentToLoginFragment())
+                true
+            }
+            else -> false
+        }
+        //return NavigationUI.onNavDestinationSelected(item, requireView().findNavController())
+        //        || super.onOptionsItemSelected(item)
     }
 
     private fun createShoeCards(shoeList: MutableList<Shoe>){
