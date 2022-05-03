@@ -10,7 +10,7 @@ This project is the first android project I created with the Udacity Android nan
 
 ## Concept
 
-The project was really symple and focused in the following proof of concepts:
+The project was really simple and focused in the following proof of concepts:
 
 1. Navigation between fragemnts/activities, 
 2. Design and creation of layouts 
